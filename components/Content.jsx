@@ -6,14 +6,9 @@ class Content extends React.Component {
 
     constructor(props) {
         super(props);
-        //this.state = {...this.props}; //get initial state
         this.handleClick = this.handleClick.bind(this);
         this.handleRemoveClick = this.handleRemoveClick.bind(this);             
   
-    }
-
-    handleRemoveClick(key) {
-        this.props.onRemove(key);
     }
 
     handleClick() {
@@ -23,16 +18,6 @@ class Content extends React.Component {
             this.refs.simpletext.value = ''
         }        
     }
-    componentDidMount() {
-        //this.unsubscribe = AppReduxStore.subscribe(() =>
-        //    this.setState(AppReduxStore.getState())
-        //);
-    }
-
-    componentWillUnmount() {
-        //this.unsubscribe();
-    }
-
     render() {
         var simpleContent =
             <div>
