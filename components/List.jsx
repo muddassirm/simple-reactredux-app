@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button.jsx'
 import AppActions from '../lib/AppActions'
-
+import AppMessage from './Message.jsx'
 
 const List = ({ articles,listHeader,onRemove}) =>  
 {
@@ -15,6 +15,7 @@ const List = ({ articles,listHeader,onRemove}) =>
                 <ul>
                     {listItems} 
                 </ul>
+                <AppMessage/>
             </div>
         );
 }

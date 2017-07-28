@@ -22,12 +22,6 @@ const mapSubmittedStateToProps = (state) => {
     }
 }
 
-const mapMessageStateToProps = (state) => {
-    return {
-        message: state.message
-   }
-}
-
 const mapApprovalStateToProps = (state) => {
     return {
         articles: state.articlesApproved,
@@ -50,18 +44,16 @@ const mapListDispatchToProps = (dispatch) => {
     }
 }
 
-const Message = ({message}) =>
-  <p>{message}</p>;
+
 
 const AppContainer = connect(mapContentStateToProps, mapContentDispatchToProps)(Content)
 const AppListSubmitted = connect(mapSubmittedStateToProps, mapListDispatchToProps)(List)
 const AppListApprovals = connect(mapApprovalStateToProps, mapListDispatchToProps)(List)
-const AppMessage  = connect(mapMessageStateToProps)(Message)
+
 const Container = () => (
   <div>
     <AppContainer />
     <AppListSubmitted />
-    <AppMessage/>
     <AppListApprovals/>
   </div>
 )
