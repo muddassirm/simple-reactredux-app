@@ -41,9 +41,6 @@ class Content extends React.Component {
                 Enter text : <input type="text" ref="simpletext"/>
                 <Button handleClick={this.handleClick} text="SUBMIT" />
                 <br />
-                <List articles={this.props.articles} listHeader="Submitted Articles" handleRemoveClick={this.handleRemoveClick} />
-                {this.props.message}
-                <List articles={this.props.articlesApproved} listHeader="Approval Status" handleRemoveClick={this.handleRemoveClick} />
             </div>;
 
         return simpleContent;
