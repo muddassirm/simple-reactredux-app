@@ -57,7 +57,6 @@ const AppContainer = connect(mapContentStateToProps, mapContentDispatchToProps)(
 const AppListSubmitted = connect(mapSubmittedStateToProps, mapListDispatchToProps)(List)
 const AppListApprovals = connect(mapApprovalStateToProps, mapListDispatchToProps)(List)
 const AppMessage  = connect(mapMessageStateToProps)(Message)
-
 const Container = () => (
   <div>
     <AppContainer />
