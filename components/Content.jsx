@@ -6,9 +6,7 @@ class Content extends React.Component {
 
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
-        this.handleRemoveClick = this.handleRemoveClick.bind(this);             
-  
+        this.handleClick = this.handleClick.bind(this);  
     }
 
     handleClick() {
@@ -18,6 +16,7 @@ class Content extends React.Component {
             this.refs.simpletext.value = ''
         }        
     }
+  
     render() {
         var simpleContent =
             <div>
