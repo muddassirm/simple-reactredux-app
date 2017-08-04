@@ -8,6 +8,7 @@ const AppReducer = (state = {
 
     switch (action.actionType) {
         case 'SUBMIT_ARTICLE':
+            //Same as newState = Object.assign({},state , submitArticle(action.value,state)  )
             newState = {
                 ...state,
                 ...submitArticle(action.value, state)
